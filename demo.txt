@@ -1,0 +1,34 @@
+def triangleCheck(a, b, c):
+    if ((mark("line-in-function$2#offset$35#statement$a <= 0#control−block$if") and (a <= 0)) or (mark("line-in-function$2#offset$45#statement$b <= 0#control−block$if") and (b <= 0)) or (mark("line-in-function$2#offset$55#statement$c <= 0#control−block$if") and (c <= 0))):
+        mark("statement$block-start#line-of-blockin-function$3")
+        mark("line-in-function$3#offset$71#statement$print("Invalid")")
+        print("Invalid")
+        mark("statement$block-end#line-of-blockin-function$3")
+    elif ((mark("line-in-function$4#offset$97#statement$a + b <= c#control−block$if") and (a + b <= c)) or (mark("line-in-function$4#offset$111#statement$a + c <= b#control−block$if") and (a + c <= b)) or (mark("line-in-function$4#offset$125#statement$b + c <= a#control−block$if") and (b + c <= a))):
+        mark("statement$block-start#line-of-blockin-function$5")
+        mark("line-in-function$5#offset$145#statement$print("Valid but not a triangle")")
+        print("Valid but not a triangle")
+        mark("statement$block-end#line-of-blockin-function$5")
+    else:
+        mark("statement$block-start#line-of-blockin-function$7")
+        if (mark("line-in-function$7#offset$198#statement$a == b#control−block$if") and (a == b)) and (mark("line-in-function$7#offset$209#statement$b == c#control−block$if") and (b == c)):
+            mark("statement$block-start#line-of-blockin-function$8")
+            mark("line-in-function$8#offset$228#statement$print("equilateral")")
+            print("equilateral")
+            mark("statement$block-end#line-of-blockin-function$8")
+        elif (((mark("line-in-function$9#offset$263#statement$a == b#control−block$if") and (a == b))) or ((mark("line-in-function$9#offset$274#statement$a == c#control−block$if") and (a == c))) or ((mark("line-in-function$9#offset$286#statement$b == c#control−block$if") and (b == c)))):
+            mark("statement$block-start#line-of-blockin-function$10")
+            mark("line-in-function$10#offset$308#statement$print("isosceles")")
+            print("isosceles")
+            mark("statement$block-end#line-of-blockin-function$10")
+        elif (((mark("line-in-function$11#offset$341#statement$a*a + b*b == c*c#control−block$if") and (a*a + b*b == c*c))) or ((mark("line-in-function$11#offset$362#statement$a*a + c*c == b*b#control−block$if") and (a*a + c*c == b*b))) or ((mark("line-in-function$11#offset$384#statement$b*b + c*c == a*a#control−block$if") and (b*b + c*c == a*a)))):
+            mark("statement$block-start#line-of-blockin-function$12")
+            mark("line-in-function$12#offset$416#statement$print('right-angled')")
+            print('right-angled')
+            mark("statement$block-end#line-of-blockin-function$12")
+        else:
+            mark("statement$block-start#line-of-blockin-function$14")
+            mark("line-in-function$14#offset$462#statement$print("scalene")")
+            print("scalene")
+            mark("statement$block-end#line-of-blockin-function$14")
+        mark("statement$block-end#line-of-blockin-function$7")
