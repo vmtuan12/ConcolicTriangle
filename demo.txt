@@ -1,4 +1,5 @@
 def triangleCheck(a, b, c):
+    mark("statement$function-start#line-of-blockin-function$2#openning-function$true")
     if ((mark("line-in-function$2#offset$35#statement$a <= 0#control−block$if") and (a <= 0)) or (mark("line-in-function$2#offset$45#statement$b <= 0#control−block$if") and (b <= 0)) or (mark("line-in-function$2#offset$55#statement$c <= 0#control−block$if") and (c <= 0))):
         mark("statement$block-start#line-of-blockin-function$3")
         mark("line-in-function$3#offset$71#statement$print("Invalid")")
@@ -32,3 +33,4 @@ def triangleCheck(a, b, c):
             print("scalene")
             mark("statement$block-end#line-of-blockin-function$14")
         mark("statement$block-end#line-of-blockin-function$7")
+    mark("statement$function-end#line-of-blockin-function$2")

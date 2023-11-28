@@ -70,7 +70,7 @@ def offset_in_if_positions(line_without_space):
         return result_positions
 
 # read file
-sourceFile = open("test.py", "r")
+sourceFile = open("sample_function.py", "r")
 code = sourceFile.read()
 
 # regex
@@ -120,12 +120,12 @@ for index in range(len(code_dicts)):
 
     # handle for
     elif match_for:
-        line_after_transforming = code_dicts[index]["line"]
+
         if if_space_dict.get(spaces) == None or if_space_dict.get(spaces) == False:
             if_space_dict[spaces] = True
             if_line_dict[spaces] = index + 2
-            line_after_transforming += make_instrumentation_blockin_function(if_line_dict[spaces], 'block-start', spaces + 4)
-            code_dicts[index]["line"] = line_after_transforming
+            line += make_instrumentation_blockin_function(if_line_dict[spaces], 'block-start', spaces + 4)
+            code_dicts[index]["line"] = line
 
     # handle if else
     elif match_if:
@@ -184,7 +184,7 @@ for item in reversed(sorted(if_space_dict.keys())):
 result += make_instrumentation_function(function_instru_code_line, 'function-end', function_instru_code_space, False)
 
 # print(result)
-f = open("demo.txt", "w", encoding="utf-8")
+f = open("sample_code_demo.txt", "w", encoding="utf-8")
 f.write(result)
 f.close()
 

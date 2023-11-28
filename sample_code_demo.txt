@@ -1,0 +1,19 @@
+def get_average(arr, n):
+    mark("statement$function-start#line-of-blockin-function$2#openning-function$true")
+    mark("line-in-function$2#offset$28#statement$avg = 0")
+    avg = 0
+    mark("line-in-function$3#offset$39#statement$temp = 0")
+    temp = 0
+    if ((mark("line-in-function$4#offset$55#statement$n > 0#control−block$if") and (n > 0))):
+        mark("statement$block-start#line-of-blockin-function$5")
+        for i in range(n):
+            mark("statement$block-start#line-of-blockin-function$6")
+            mark("line-in-function$6#offset$100#statement$temp += arr[i]")
+            temp += arr[i]
+            mark("statement$block-end#line-of-blockin-function$6")
+        mark("line-in-function$7#offset$122#statement$avg = temp/n")
+        avg = temp/n
+        mark("statement$block-end#line-of-blockin-function$5")
+    mark("line-in-function$8#offset$138#statement$return avg")
+    return avg
+    mark("statement$function-end#line-of-blockin-function$2")
